@@ -4,7 +4,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController(value = "api/v1/hello/")
+@RestController
+@RequestMapping("/api/v1/hello")
 public class HelloController {
 
     @RequestMapping("/")
